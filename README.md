@@ -8,7 +8,7 @@ An online Curling game.
    - Css3
    - Sockets IO
 # Testing/Deployment
-- Download "Curling" folder and unzip. 
+- Download "Curling-Game-master" folder and unzip. 
 - Navigate to folder in terminal.
 - Type the following, "npm install", in order to successfully install all libraries used(I only used socket io)
 - Type "node server.js" to start the server.
