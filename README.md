@@ -8,14 +8,6 @@ An online Curling game.
    - Css3
    - Sockets IO
 # Testing/Deployment
-
-
-- A link to a hosted version : https://ibrahimayyoub.com/WebEngineer/index.html
-- Note! If for anyreason the hosted version isn't working, clone the repository and launch the index.html, it should be working just as fine.
-
-
-
-
 - Download "Curling" folder and unzip. 
 - Navigate to folder in terminal.
 - Type the following, "npm install", in order to successfully install all libraries used(I only used socket io)
