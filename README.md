@@ -1,6 +1,3 @@
-# Curling game(online multiplayer
-
-
 # Description
 
 An online Curling game.
