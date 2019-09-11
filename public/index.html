@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Curling Game - Ibrahim Ayyoub</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="css/bootstrap-grid.css">
+     <script src="./jquery-1.11.3.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <script src="/socket.io/socket.io.js"></script>
+    <!-- FAVICONS PART -->
+    <link rel="apple-touch-icon" sizes="57x57" href="css/favcion.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="css/favcion.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="css/favcion.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="css/favcion.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="css/favcion.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="css/favcion.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="css/favcion.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="css/favcion.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="css/favcion.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="css/favcion.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/favcion.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="css/favcion.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/favcion.ico/favicon-16x16.png">
+    <link rel="manifest" href="css/favcion.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="css/favcion.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- END OF FAVICONS -->
+   </head>
+
+  <body>
+    <!-- <canvas id='canvas1' class='canvas' width='1000' height='640'>
+      Canvas not supported
+    </canvas>  -->
+    <section class="jumbotron">
+
+      <!-- HAVE THE CANAVAS HERE DISABLED(not viewable)
+           then once the users have readyed up then i will do display: none for the 
+      -->
+
+
+
+
+      <div class="container options">
+      
+        <div class="row">
+          
+          <div class="col-8 player-game">
+              <h3 id="player-1" class="formatted">player1:</h3>
+              <h4 id='player-1-name' class="formatted">yourname</h4> 
+              <h3 id="player-2" class="formatted">player2:</h3>
+              <h4 id='player-2-name' class="formatted">yourname</h4>
+              <img id ="added-image">
+              <br>
+              <br>
+              <h4  class="formatted-2">Player 1 score : <span id='player-1-score' class="colorfiy">0</span></h4>
+              <h4  class="formatted-2">Player 2 score : <span id='player-2-score' class="colorfiy">0</span></h4>
+              
+            
+            
+          </div>
+       
+          
+          <div class="col-8 player-menu">
+                  <br>
+                  <div>
+                    <h1 style="text-align:center;color: #48dbfb; margin-top: -15px; transform: translateX(-15%);">Player Menu</p>
+                  </div>
+                  <input id='user-name' type="text" placeholder="choose a nick name!" name="username">
+                  <br>
+                  <br>
+                  <input id='user-color' type="text" placeholder="choose a colour, Ex. red, purple, blue, orange, and green only" name="color">
+                  <br>
+                  <br>
+                  <input id='ready-button'  class="btn btn-secondary" type="button" value="Ready Up">
+                  <input id='music-button'  class="btn btn-secondary" type="button" value="Music ON/OFF">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <input id='start-button'  class="btn btn-primary" type="button" value="Start Game">
+                  
+
+                
+          </div>
+          
+         
+            
+          <div class="col-4">
+            <p style="font-size: 45px; text-align: center; color: #48dbfb; transform: translateX(15%);">Game Chat</p>
+            <div id='message-catalog'>
+                <div class="a-new-message-static">
+                   Chat rules: no swearing, stay positive!
+                </div>
+              </div>
+            <textarea placeholder="Chat with your viewers" rows="20" cols="120" class="text-message" id="message-box"></textarea>
+            <div></div>
+            <input class="btn btn-secondary" id="send-a-message" onclick="printMessage()" type="button" value="Send Message">
+          </div>
+        </div>
+      </div>
+  </section>
+  <div id="canvas"></div>
+    <!-- REMOVE THIS BR -->
+    <br>
+    <div id = "footer"></div>
+    <footer class="page-footer font-small blue-grey lighten-5 bg-color copy-footer">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center  py-3">Curling Game by Ibrahim Ayyoub &copy;2018 Copyright. All rights reserved.</div>
+    </footer>
+
+   
+    <script src="./client.js"></script>
+    
+  </body>
+</html>

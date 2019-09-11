@@ -1,0 +1,14 @@
+{
+  "name": "curling-game",
+  "version": "1.0.0",
+  "description": "Building  a simple interpretation of a curling game, using Socket.io and Node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ibrahim Ayyoub",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.1.1"
+  }
+}
